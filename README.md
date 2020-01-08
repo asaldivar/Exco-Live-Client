@@ -4,7 +4,8 @@
 Clients is requesting to host a “live stream” event on the existing platform called Expedition Live. Expedition Live requires all its 10,000 students (users) across multiple classes to attend the live event at a specified time where they will check-in to the event, view the live stream, and participate in flash quizzes throughout the course of the live stream. 
 
 ## Prompts
-(1) Your task is to design and build a system that supports client requirements below. The focus of this project is system design, database query optimization, and server scalability. 
+(1) Your task is to design and build a system that supports client requirements below. The focus of this project is system design, database query optimization, and server scalability.
+
 (2) Please write a test script to evaluate the program’s scalability. The test should provide prove that the system is able to support the numbers of users anticipated.
 
 ## Features & Requirements
@@ -13,10 +14,10 @@ Clients is requesting to host a “live stream” event on the existing platform
 * A user only needs to be checked in once throughout the lifespan of an event. After check-in has been done, a user is to land directly on the live stream page.
 
 _Check-in process has two steps:_
-1. Step 1: Test Connection
+1. Test Connection
   * To test connection, load an image file on page entry. Determine user’s internet speed using any available load information.
   * If the internet speed exceeds minimum requirement, allow user to continue to step 2.
-2. Step 2: Check-in Attendance
+2. Check-in Attendance
   * To check in, a user needs to enter their last 4 digits of their username.
   * A user is able to check-in other employees from the same class. To do so, display a list of all users from the same class, also with option to enter the last 4 digits of their usernames. 
   * After a user finishes selecting other users to check-in (or none), clicking on “Check-In” button will update user database with respective check-in timestamp for all checked-in users, then redirect user to the live stream page.
