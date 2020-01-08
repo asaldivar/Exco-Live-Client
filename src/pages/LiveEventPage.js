@@ -8,10 +8,7 @@ import LiveStream from '../components/LiveStream';
 class LiveEventPage extends Component {
   render() {
     return (
-      <div>
-        <h1>Expedition Live</h1>
-        <h2>Live Event Page</h2>
-
+      <div className="m-5">
         {/* Here are the 3 stages of a live event. Please manage state according to prompt. */}
         <CheckIn />
         {/* <LiveStream /> */}

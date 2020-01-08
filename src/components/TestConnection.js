@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 const MIN_SPEED_REQUIREMENT = 500; // in kbps
-const DOWNLOAD_SIZE = 0; // Prompt: update download size.
-const IMAGE_URL = null; // Prompt: insert image url for testing here.
+const IMAGE_URL = null; // Prompt: insert your uploaded image url for testing here.
+const DOWNLOAD_SIZE = 0; // Prompt: update download size of the uploaded image.
 const TESTING_TOTAL = 3;
-
 
 class TestConnection extends Component {
 
@@ -62,8 +61,13 @@ class TestConnection extends Component {
   render() {
     return (
       <div>
-        <h3>Please test your internet connection.</h3>
-        <button onClick={this.testConnection}>Test Connection</button>
+        <p>Please test your internet connection.</p>
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={this.testConnection}>
+            Test Connection
+        </button>
 
         {/* Prompt: should test connection pass, allow user to move to next screen and check in */}
         {/* You are not required to handle failed connection test. */}
