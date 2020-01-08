@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import AttendeeList from './AttendeeList';
 
+// Note: this component could be used for both Check In and Check Out.
 class MarkAttenance extends Component {
   render() {
     return (
       <div>
-        <h3>Please check in any employees who is participating in this live event with you.</h3>
-        
-        {/* Prompt: Display a list of all employees (users) from the same store as current user.
-            Allow the user to select any employee from list to check them in.
-            If any employee is already checked in, display their status as "Checked In"; they don't have to be checked in again. */}
-        <div className="prompt">Insert employee list here.</div>
+        <h3>Please check in/out any employees who is participating in this live event with you by entering the last 4 digits of their username.</h3>
+        <AttendeeList />
 
-        <button>Check In User(s)</button>
+        {/* Prompt: on button click, check in all selected user(s) and send check in/out timestamp to database.
+            Only save the first occuring timestamp for both check in and check out*/}
+        <button>Check In/Out User(s)</button>
       </div>
     )
   };

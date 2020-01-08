@@ -13,7 +13,9 @@ const HomePage = ({ history }) => {
       <h1>Expedition Live</h1>
       <h2>Home Page</h2>
       
-      <button onClick={handleLiveEventClick}>Go to Live Event</button>
+      <p>Enter a username to log in to the live event as that user:</p>
+      <input placeHolder="Enter username "></input>
+      <button type="vutton" class="btn btn-primary" onClick={handleLiveEventClick}>Go to Live Event</button>
     </div>
   )
 };
