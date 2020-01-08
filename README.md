@@ -1,7 +1,7 @@
-# EXPEDITION LIVE - CODING CHALLENGE
+# EXCO LIVE - CODING CHALLENGE
 
 ## Brief
-Clients is requesting to host a “live stream” event on the existing platform called Expedition Live. Expedition Live requires all its 10,000 students (users) across multiple classes to attend the live event at a specified time where they will check-in to the event, view the live stream, and participate in flash quizzes throughout the course of the live stream. 
+Clients is requesting to host a “live stream” event on the existing platform called Exco Live. Exco Live requires all its 10,000 students (users) across multiple classes to attend the live event at a specified time where they will check-in to the event, view the live stream, and participate in flash quizzes throughout the course of the live stream. 
 
 ## Prompts
 (1) Your task is to design and build a system that supports client requirements below. The focus of this project is system design, database query optimization, and server scalability.
@@ -11,7 +11,7 @@ Clients is requesting to host a “live stream” event on the existing platform
 ## Features & Requirements
 **A. Check-In & Test Connections**
 * Check-in is required for every user to track attendance and ensure minimum system requirements are met. A user should land on the check-in page before entering the live stream page.
-* A user only needs to be checked in once throughout the lifespan of an event. After check-in has been done, a user is to land directly on the live stream page.
+* A user only needs to be checked in once throughout the lifespan of an event. If a user has already been checked in, they are to land directly on the live stream page.
 
 _Check-in process has two steps:_
 1. Test Connection
