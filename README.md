@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# EXPEDITION LIVE - CODING CHALLENGE
 
-## Available Scripts
+## Brief
+Clients is requesting to host a “live stream” event on the existing platform called Expedition Live. Expedition Live requires all its 10,000 students (users) across multiple classes to attend the live event at a specified time where they will check-in to the event, view the live stream, and participate in flash quizzes throughout the course of the live stream. 
 
-In the project directory, you can run:
+## Prompts
+(1) Your task is to design and build a system that supports client requirements below. The focus of this project is system design, database query optimization, and server scalability. 
+(2) Please write a test script to evaluate the program’s scalability. The test should provide prove that the system is able to support the numbers of users anticipated.
 
-### `npm start`
+## Features & Requirements
+**A. Check-In & Test Connections**
+* Check-in is required for every user to track attendance and ensure minimum system requirements are met. A user should land on the check-in page before entering the live stream page.
+* A user only needs to be checked in once throughout the lifespan of an event. After check-in has been done, a user is to land directly on the live stream page.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_Check-in process has two steps:_
+1. Step 1: Test Connection
+  * To test connection, load an image file on page entry. Determine user’s internet speed using any available load information.
+  * If the internet speed exceeds minimum requirement, allow user to continue to step 2.
+2. Step 2: Check-in Attendance
+  * To check in, a user needs to enter their last 4 digits of their username.
+  * A user is able to check-in other employees from the same class. To do so, display a list of all users from the same class, also with option to enter the last 4 digits of their usernames. 
+  * After a user finishes selecting other users to check-in (or none), clicking on “Check-In” button will update user database with respective check-in timestamp for all checked-in users, then redirect user to the live stream page.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**B. Live Stream Page**
+* Assume the video is streamed through a third party service. You may use any sample m3u8 url for the live stream.
+* When a user lands on the live stream page, the video should auto play.
+* Display the total number of attendance in real time.
 
-### `npm test`
+**C. Check-out**
+* At the end of the live event, a check-out prompt should appear to allow users to checkout.
+* Users will be presented with a list of all users who they have checked-in for, including themselves.
+* Clicking on “Check-Out” button will update user database with respective check-out timestamps for all check-out users. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Run Project
+> npm run start

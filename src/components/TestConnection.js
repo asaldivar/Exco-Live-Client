@@ -71,7 +71,14 @@ class TestConnection extends Component {
 
         {/* Prompt: should test connection pass, allow user to move to next screen and check in */}
         {/* You are not required to handle failed connection test. */}
+        
         <div className="prompt">Display confirmation once a user has passed the connection test and introduce a CTA button that takes user to step 2.</div>
+        {/* <button
+          type="button"
+          className="btn btn-outline-primary">
+            Continue to Check In
+        </button> */}
+      
       </div>
     )
   };
