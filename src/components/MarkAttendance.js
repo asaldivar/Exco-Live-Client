@@ -8,7 +8,7 @@ class MarkAttenance extends Component {
       <div>
         <AttendeeList />
 
-        {/* Prompt: on button click, check in all selected user(s) and send check in/out timestamp to database.
+        {/* Prompt: on button click, check in/out all selected user(s) and send check in/out timestamp to database.
             Only save the first occuring timestamp for both check in and check out*/}
         <button className="mt-4 btn btn-outline-primary">Check In/Out User(s)</button>
       </div>

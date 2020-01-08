@@ -1,7 +1,7 @@
 # EXCO LIVE - CODING CHALLENGE
 
 ## Brief
-Clients is requesting to host a “live stream” event on the existing platform called Exco Live. Exco Live requires all its 10,000 students (users) across multiple classes to attend the live event at a specified time where they will check-in to the event, view the live stream, and participate in flash quizzes throughout the course of the live stream. 
+Clients is requesting to host a “live stream” event on the existing platform called Exco Live. Exco Live requires all its 10,000 students (users) across multiple classes to attend the live event at a specified time where they will check-in to the event, view the live stream, and check-out at the end of the live stream. 
 
 ## Prompts
 (1) Your task is to design and build a system that supports client requirements below. The focus of this project is system design, database query optimization, and server scalability.
